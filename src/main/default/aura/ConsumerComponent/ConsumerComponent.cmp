@@ -1,0 +1,5 @@
+<aura:component>
+    <aura:handler action="{!c.onInit}" name="init" value="{!this}" />
+
+    <c:LabelValueProvider />
+</aura:component>

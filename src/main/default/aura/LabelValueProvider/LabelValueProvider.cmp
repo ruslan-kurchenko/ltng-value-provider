@@ -1,0 +1,11 @@
+<aura:component extends="c:AbstractValueProvider">
+    <aura:set attribute="name" value="$provider" />
+    <aura:set attribute="type" value="Label" />
+    <aura:set attribute="values" value="{!
+            'lbl_error_message:' + $Label.c.lbl_error_message + ',' +
+            'c.lbl_success_message:' + $Label.c.lbl_success_message}" />
+
+    <!--Enter the label values with namespace - 'c.lbl_success_message:' + $Label.c.lbl_success_message-->
+    <!--Or without namespace - 'lbl_error_message:' + $Label.c.lbl_error_message-->
+    <!--All values should be delimited by comma-->
+</aura:component>
